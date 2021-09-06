@@ -1,0 +1,14 @@
+# 어떤 query나 mutation을 가졌는지 알려줌
+# 데이터의 형식을 정의
+
+type Person {
+  id: String!
+  name: String!
+  age: Int!
+  gender: String!
+}
+
+type Query {
+  people: [Person]!
+  person(id: Int!): Person
+}
